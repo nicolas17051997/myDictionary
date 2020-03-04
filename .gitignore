@@ -3,3 +3,10 @@
 ################################################################################
 
 /Dictionary.API/Dictionary.API/bin/Debug/netcoreapp2.1
+/Dictionary.API/.vs/Dictionary.API
+/Dictionary.API/Dictionary.API/obj
+/Dictionary.API/Dictionary.BLL/bin/Debug
+/Dictionary.API/Dictionary.BLL/obj
+/Dictionary.API/Dictionary.DAL/bin/Debug
+/Dictionary.API/Dictionary.DAL/obj
+/Dictionary.API/Dictionary.UI/obj
