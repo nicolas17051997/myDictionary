@@ -1,1 +1,61 @@
+<nav class="mb-1 navbar navbar-expand-lg navbar-dark info-color">
+  <img src="../assets/logo-dictionary.png" alt="logotip of site" width="45px" height="45px">
+  <a class="navbar-brand" href="/">Your_notes</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-4"
+    aria-controls="navbarSupportedContent-4" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent-4">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" routerLink="home" routerLinkActive="active" >
+          <mdb-icon fas icon="graduation-cap"></mdb-icon> 
+          <span class="label">
+            Home
+          </span>
+        </a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" routerLink="login" routerLinkActive="active" >
+          <mdb-icon fas icon="user-secret"></mdb-icon>
+          <span class="label">
+            LogIn
+          </span>
+        </a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" routerLink="createpost" routerLinkActive="active" >
+          <mdb-icon fas icon="pencil-alt"></mdb-icon>  
+          <span class="label">
+            AddNewPost
+          </span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <div class="btn-group" mdbDropdown>
+          <button mdbDropdownToggle mdbBtn color="info" size="sm" class="dropdown-toggle waves-light" type="button"
+            mdbWavesEffect>
+            Setting
+          </button>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" routerLink="admin" routerLinkActive="active">
+              <mdb-icon fas icon="user-tie"></mdb-icon>
+              Users
+            </a>
+            <a class="dropdown-item" routerLink="edit" routerLinkActive="active" >
+              <mdb-icon fas icon="edit"></mdb-icon>
+              Edit Titles
+            </a>         
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" >
+              <mdb-icon fas icon="external-link-alt"></mdb-icon>
+              LogOut
+            </a>   
+          </div>
+        </div>
 
+      </li>
+    </ul>
+  </div>
+</nav>
+<!--/.Navbar -->

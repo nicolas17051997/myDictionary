@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ManagmentAdComponent } from './managment-ad.component';
+import { EditPostComponent } from './edit-post.component';
 
-describe('ManagmentAdComponent', () => {
-  let component: ManagmentAdComponent;
-  let fixture: ComponentFixture<ManagmentAdComponent>;
+describe('EditPostComponent', () => {
+  let component: EditPostComponent;
+  let fixture: ComponentFixture<EditPostComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ManagmentAdComponent ]
+      declarations: [ EditPostComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ManagmentAdComponent);
+    fixture = TestBed.createComponent(EditPostComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
