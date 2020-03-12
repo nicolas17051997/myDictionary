@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Dictionary.BLL.DTO
 {
-  public  class NewUser
+  public  class NewUserViewModel
     {
         public int Id { get; set; }
         public string Name { get; set; }

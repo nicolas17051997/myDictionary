@@ -10,5 +10,6 @@ namespace Dictionary.DAL.Models
         public int UserId { get; set; }
         public Role Role { get; set; }
         public User User { get; set; }
+       
     }
 }

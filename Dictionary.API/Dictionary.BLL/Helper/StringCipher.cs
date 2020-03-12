@@ -10,7 +10,7 @@ namespace Dictionary.BLL.Helper
     {
         public static string Encrypt(string clearText)
         {
-            string EncryptionKey = "abc123";
+            string EncryptionKey = "nicholas123456";
             byte[] clearBytes = Encoding.Unicode.GetBytes(clearText);
             using (Aes encryptor = Aes.Create())
             {
@@ -31,7 +31,7 @@ namespace Dictionary.BLL.Helper
         }
         public static string Decrypt(string cipherText)
         {
-            string EncryptionKey = "abc123";
+            string EncryptionKey = "nicholas12345";
             cipherText = cipherText.Replace(" ", "+");
             byte[] cipherBytes = Convert.FromBase64String(cipherText);
             using (Aes encryptor = Aes.Create())

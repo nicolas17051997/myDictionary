@@ -16,18 +16,11 @@ export class AppComponent {
 
   constructor(private router: Router,
     private authenticationService: AuthenticationService){  }
-    clicks: Click[] = [
-      {value: 'steak-0', viewValue: 'Steak'},
-      {value: 'pizza-1', viewValue: 'Pizza'},
-      {value: 'tacos-2', viewValue: 'Tacos'}
-    ];
+    
 
   logout() {
     this.authenticationService.logout();
     this.router.navigate(['/login']);
   }
 }
-interface Click {
-  value: string;
-  viewValue: string;
-}
+

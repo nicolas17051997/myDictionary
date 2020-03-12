@@ -19,6 +19,17 @@ namespace Dictionary.DAL.Repository
             entities = _dbcontext.Set<T>();
          }
 
+        public async Task<T> Create(T entity)
+        {
+            if(entity == null)
+            {
+                throw new ArgumentNullException();
+            }
+            var item = await _dbcontext.Set<T>().AddAsync(entity);
+            await _dbcontext.SaveChangesAsync();
+            return item.Entity;
+        }
+
         public async Task Delete(T entity)
         {
             if(entity == null)

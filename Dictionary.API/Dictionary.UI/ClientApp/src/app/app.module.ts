@@ -20,6 +20,7 @@ import { LoginComponent } from './components/login/login.component';
 import { AddPostComponent } from './components/add-post/add-post.component';
 import { ManagementAddminComponent } from './components/management-addmin/management-addmin.component';
 import { EditPostComponent } from './components/edit-post/edit-post.component';
+import { StartComponent } from './start/start.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { EditPostComponent } from './components/edit-post/edit-post.component';
     LoginComponent,
     AddPostComponent,
     ManagementAddminComponent,
-    EditPostComponent
+    EditPostComponent,
+    StartComponent
   ],
   imports: [
     BrowserModule,
@@ -41,7 +43,7 @@ import { EditPostComponent } from './components/edit-post/edit-post.component';
     AngularMaterialModule,
     ReactiveFormsModule,
     AngularMaterialModule,
-    MDBBootstrapModule.forRoot()
+    MDBBootstrapModule
   ],
   providers: [
     {provide:HTTP_INTERCEPTORS, useClass:JwtInterceptor, multi:true}

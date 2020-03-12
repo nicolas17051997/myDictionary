@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
+import { StartComponent } from './start/start.component';
 import { HomeComponent } from './components/home/home.component';
 import { RegisterComponent } from './components/register/register.component';
 import { LoginComponent } from './components/login/login.component';
@@ -11,8 +12,7 @@ import { EditPostComponent } from './components/edit-post/edit-post.component';
 import { AuthGuard } from './guard/auth.guard';
 
 const routes: Routes = [
-
-  
+  {path:'str', component:StartComponent},
   // {path:'home', component:HomeComponent, canActivate:[AuthGuard]},
   {path:'home', component:HomeComponent},
   // {path:'createpost', component:AddPostComponent, canActivate:[AuthGuard]},
@@ -22,7 +22,7 @@ const routes: Routes = [
   {path:'edit', component:EditPostComponent},
   {path:'register', component:RegisterComponent},
   {path:'login', component:LoginComponent},
-  {path:'**',redirectTo:'/home'}
+  {path:'**', redirectTo:'/home'}
 ];
 
 @NgModule({
